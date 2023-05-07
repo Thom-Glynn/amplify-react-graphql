@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "@aws-amplify/ui-react/styles.css";
-import { Amplify } from 'aws-amplify';
+import { ThemeProvider } from '@aws-amplify/ui-react';
 import config from './aws-exports';
-Amplify.configure(config);
+ThemeProvider.configure(config);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
